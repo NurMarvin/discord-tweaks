@@ -1,0 +1,28 @@
+/*
+ Credits: Cadence <https://github.com/cloudrac3r/>
+ */
+.sidebar-2K8pFh {
+  .scroller-2FKFPG {
+    position: relative;
+  }
+
+  .containerDefault-3GGEv_ {
+    display: flex;
+    align-items: center;
+    &::after {
+      content: "";
+      position: absolute;
+      top: 28px;
+      background: #55595f;
+      height: 1.1px;
+      left: 6px;
+      right: 0px;
+      z-index: -1;
+    }
+  }
+
+  .containerDefault-3GGEv_ > * {
+    background: #2f3136;
+    margin: 0 auto;
+  }
+}
