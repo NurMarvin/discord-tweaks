@@ -5,7 +5,7 @@ A Powercord plugin that gives you small tweaks for your Discord client
 - Always show message timestamps 
 - Make the emoji picker dark
 - Hide blocked user messages
-- Hide the Nitro Boost icon unless you over hover of the guild name
+- Hide the Nitro Boost icon unless you hover over of the guild name
 - Hide the Library button in the Home tab 
 - Make profile avatars in the user popouts a little bigger
 - Make categories centered and have lines next to them
@@ -15,7 +15,6 @@ A Powercord plugin that gives you small tweaks for your Discord client
 - Make code blocks scrollable
 - Make user panels scrollable
 - Make role names fully show up in the user list on the right 
-
 
 If you have a tweak that you would love to see in this plugin,
 just message me on Discord @ NurMarvin#1337 and I will try and add it
