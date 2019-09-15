@@ -75,6 +75,9 @@ module.exports = class DiscordTweaks extends Plugin {
         if (getSettings("moreObviousGuildSpeaker")) {
             toggleTweak('more-obvious-guild-speaker')
         }
+        if (getSettings("hideGiftButton")) {
+            toggleTweak('hide-gift-button')
+        }
     }
 
     toggleTweak(tweak) {
