@@ -240,6 +240,23 @@ module.exports = class DiscordTweaksSettings extends React.Component {
                 >
                     Larger Profile Avatars
                 </SwitchItem>
+                <SwitchItem
+                    note={
+                        <div>
+                            When toggled, the gift button on the text field next to GIF will not be shown.
+                            <br />
+                            Credits: <a href={"#"} onClick={() => shell.openExternal("https://github.com/Soheab")}>Soheab</a>
+                        </div>
+                    }
+                    value={this.props.getSetting('hideGiftButton', false)}
+                    onChange={() => {
+                        this.props.toggleSetting("hideGiftButton")
+                        this.props.toggleTweak("hide-gift-button");
+                    }}
+                >
+                    Hide Gift Button
+                </SwitchItem>
+
             </div>
         )
     }
