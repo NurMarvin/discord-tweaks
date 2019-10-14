@@ -3,10 +3,6 @@ const { SwitchItem } = require("powercord/components/settings")
 const { shell } = window.require('electron');
 
 module.exports = class DiscordTweaksSettings extends React.Component {
-    constructor() {
-        super()
-    }
-
     render() {
         return (
             <div>
@@ -256,7 +252,22 @@ module.exports = class DiscordTweaksSettings extends React.Component {
                 >
                     Hide Gift Button
                 </SwitchItem>
-
+                <SwitchItem
+                    note={
+                        <div>
+                            When toggled, message buttons that are added by other plugins like <a href={"#"} onClick={() => shell.openExternal("https://github.com/powercord-community/quickstar")}>Star</a>, <a href={"#"} onClick={() => shell.openExternal("https://github.com/cloudrac3r/powercord-quick-react")}>Quick React</a> or <a href={"#"} onClick={() => shell.openExternal("https://github.com/NurMarvin/quote")}>Quote</a> will be shown in a compact list when hovered over.
+                            <br />
+                            Credits: <a href={"#"} onClick={() => shell.openExternal("https://github.com/cloudrac3r")}>Cadence</a>
+                        </div>
+                    }
+                    value={this.props.getSetting('compactExtraButtons', false)}
+                    onChange={() => {
+                        this.props.toggleSetting("compactExtraButtons")
+                        this.props.toggleTweak("compact-extra-buttons");
+                    }}
+                >
+                    Compact Extra Buttons
+                </SwitchItem>
             </div>
         )
     }

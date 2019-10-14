@@ -1,0 +1,25 @@
+/*
+ Credits: Cadence <https://github.com/cloudrac3r/>
+ */
+.buttonContainer-KtQ8wc {
+  width: 35px;
+  height: 1em;
+  display: block;
+}
+
+.buttonContainer-37UsAw {
+  position: absolute;
+  width: 35px;
+  display: flex;
+  justify-content: flex-end;
+  overflow: hidden;
+  right: 5px;
+}
+
+.buttonContainer-37UsAw:hover {
+  width: auto;
+  background-color: var(--background-secondary);
+  padding: 10px;
+  margin: -10px;
+  border-radius: 8px;
+}
