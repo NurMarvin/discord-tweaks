@@ -268,6 +268,22 @@ module.exports = class DiscordTweaksSettings extends React.Component {
                 >
                     Compact Extra Buttons
                 </SwitchItem>
+                <SwitchItem
+                    note={
+                        <div>
+                            When toggled, hides disabled emojis in emoji picker.
+                            <br />
+                            Credits: <a href={"#"} onClick={() => shell.openExternal("https://github.com/juby210-PL")}>Juby210</a>
+                        </div>
+                    }
+                    value={this.props.getSetting('hideDisabledEmojis', false)}
+                    onChange={() => {
+                        this.props.toggleSetting("hideDisabledEmojis")
+                        this.props.toggleTweakJS("hide-disabled-emojis");
+                    }}
+                >
+                    Hide Disabled Emojis
+                </SwitchItem>
             </div>
         )
     }
