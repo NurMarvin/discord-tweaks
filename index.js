@@ -4,16 +4,22 @@ const { React } = require('powercord/webpack');
 const Settings = require('./components/Settings');
 
 module.exports = class DiscordTweaks extends Plugin {
+  registeredTweaksJS = []
+
   async startPlugin () {
     const toggleTweak = tweak => {
       this.toggleTweak(tweak);
     };
+    const toggleTweakJS = tweakid => {
+      this.toggleTweakJS(tweakid);
+    }
 
     const getSettings = (key, defaultValue) => this.settings.get(key, defaultValue);
 
     this.registerSettings('discord-tweaks', 'Discord Tweaks', (props) =>
       React.createElement(Settings, {
         toggleTweak,
+        toggleTweakJS,
         ...props
       })
     );
@@ -79,6 +85,10 @@ module.exports = class DiscordTweaks extends Plugin {
     if (getSettings('compactExtraButtons')) {
       toggleTweak('compact-extra-buttons');
     }
+
+    if (getSettings('hideDisabledEmojis')) {
+      toggleTweakJS('hide-disabled-emojis');
+    }
   }
 
   toggleTweak (tweak) {
@@ -89,6 +99,19 @@ module.exports = class DiscordTweaks extends Plugin {
       this.loadCSS(id, resolve(`${__dirname}/tweaks/`, `${tweak}.scss`));
     } else {
       this.unloadCSS(id);
+    }
+  }
+
+  toggleTweakJS (tweakid) {
+    const tweak = this.registeredTweaksJS.find(t => t.id == tweakid)
+
+    if (!tweak) {
+      const tweakjs = require(`./tweaksjs/${tweakid}`);
+      tweakjs.enable();
+      this.registeredTweaksJS.push({ id: tweakid, ...tweakjs });
+    } else {
+      tweak.disable();
+      this.registeredTweaksJS.splice(this.registeredTweaksJS.indexOf(tweak), 1);
     }
   }
 
