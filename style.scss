@@ -1,0 +1,94 @@
+.theme-dark {
+  --discord-tweaks-card-background: #202226;
+  --discord-tweaks-card-title: #fff;
+  --discord-tweaks-card-description: #b9bbbe;
+}
+
+.discordTweaksSettings {
+  padding: 0 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .divider-3573oO {
+    display: none;
+  }
+
+  .tweaks {
+    padding-top: 15px;
+
+    .tweakCard {
+      background-color: var(--discord-tweaks-card-background);
+      border-radius: 5px;
+      width: 650px;
+      min-height: 150px;
+      margin-bottom: 20px;
+
+      &:hover {
+        transform: scale(1.005);
+      }
+
+      .tweakInfo {
+        padding: 15px;
+
+        .tweakName {
+          color: var(--discord-tweaks-card-title);
+          font-weight: 600;
+        }
+
+        .tweakAuthor {
+          padding-top: 8px;
+          color: var(--discord-tweaks-card-title);
+        }
+
+        .tweakDescription {
+          padding-top: 8px;
+          width: 100%;
+          color: var(--discord-tweaks-card-description);
+        }
+      }
+
+      .tweakSettings {
+        padding: 0 15px;
+      }
+
+      .tweakToggle {
+        margin: 0 15px;
+        padding-bottom: 5px;
+
+        label {
+          float: right;
+        }
+      }
+    }
+  }
+}
+
+.searchBox {
+  display: flex;
+  background-color: #4f545c;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+  padding-right: 16px;
+  border-radius: 3px;
+  width: 100%;
+  transition: width 0.5s;
+
+  .searchBoxInput {
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 12px;
+    background: transparent;
+    height: auto;
+    z-index: 2;
+  }
+
+  .searchIcon {
+    margin: auto 0;
+    color: hsla(0, 0%, 100%, 0.3);
+    width: 1.4em;
+    height: 1.4em;
+    cursor: pointer;
+    float: right;
+  }
+}

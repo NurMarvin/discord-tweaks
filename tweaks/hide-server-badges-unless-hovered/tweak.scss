@@ -9,9 +9,9 @@ header:hover .guildIconContainer-E1JUVt {
   margin-right: 4px;
 }
 header .flowerStarContainer-3zDVtj {
-  width: 0px;
+  width: 0px !important;
   transition: width 0.15s ease-out;
 }
 header:hover .flowerStarContainer-3zDVtj {
-  width: 16px;
+  width: 16px !important;
 }
