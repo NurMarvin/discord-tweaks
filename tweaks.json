@@ -102,5 +102,11 @@
         "author": "Juby210",
         "authorUrl": "https://github.com/juby210-PL/",
         "description": "When enabled, disabled emojis are hidden in the emoji picker <s>(imagine not having nitro)</s>."
+    },
+    {
+        "name": "Make Guild Tooltips Great Again",
+        "author": "NurMarvin",
+        "authorUrl": "https://github.com/NurMarvin/",
+        "description": "When enabled, guild tooltips have their old styling again."
     }
 ]
