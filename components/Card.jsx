@@ -62,7 +62,7 @@ module.exports = class Card extends React.Component {
                 <div className="tweakSettings">
                     <Category
                         name='Tweak Settings (Soon™️)'
-                        description="This feature is not yet ready. We are hard at work at implementing this though!"
+                        description="This feature is not yet ready. We are hard at work at implementing it though!"
                         opened={false}
                         onChange={() => this.setState({ settingsOpen: !this.state.settingsOpen })}
                     >
