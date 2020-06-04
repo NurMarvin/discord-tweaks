@@ -1,8 +1,6 @@
 /*
- Credits: Soheab <https://github.com/Soheab>
+ Credits: Equity <https://github.com/Equity>
  */
-.textArea-2Spzkt + .buttons-205you > .buttonWrapper-1ZmCpA {
-  &[aria-label="Send a gift"] {
-    display: none;
-  }
+button[aria-label="Send a gift"] {
+  display: none;
 }
