@@ -1,7 +1,7 @@
 /*
  Idea taken from frozolotl's Discord One Dark theme <https://gitlab.com/frozo/discord-onedark/>
  */
-.theme-dark .markup-2BOw-j {
+.theme-dark [class|=markup] {
   pre {
     height: 100%;
     overflow-y: scroll;
@@ -11,6 +11,7 @@
       height: 14px;
       width: 14px;
     }
+
     &::-webkit-scrollbar-thumb,
     &::-webkit-scrollbar-track {
       background-clip: padding-box;
