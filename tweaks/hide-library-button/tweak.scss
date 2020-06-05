@@ -1,9 +1,10 @@
 /*
  Credits: Cadence <https://github.com/cloudrac3r/>
  */
-a.channel-2QD9_O[href="/library"] {
+a[class|=channel][href="/library"] {
   display: none;
 }
-.channel-2QD9_O {
+
+[class|=channel] {
   height: initial;
 }

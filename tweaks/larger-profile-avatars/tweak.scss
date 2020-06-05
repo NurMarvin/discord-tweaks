@@ -1,12 +1,13 @@
 /*
  Credits: Cadence <https://github.com/cloudrac3r/>
  */
-.avatarWrapperNormal-3wFMbf,
-.avatarWrapperNonUserBot-2DufN6 {
+[class|=avatarWrapperNormal],
+[class|=avatarWrapperNonUserBot] {
   transform: scale(1.2);
   padding: 10px 0px;
 }
-.avatarWrapperNormal-3wFMbf > svg,
-.avatarWrapperNonUserBot-2DufN6 > svg {
+
+[class|=avatarWrapperNormal]>svg,
+[class|=avatarWrapperNonUserBot]>svg {
   padding: 10px 0px;
 }

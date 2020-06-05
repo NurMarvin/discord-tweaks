@@ -1,5 +1,4 @@
-[
-    {
+[{
         "name": "Hide Help Button",
         "author": "sdf#9069",
         "description": "When enabled, the help button in the top right corner will not be shown."
@@ -9,25 +8,15 @@
         "author": "Cadence",
         "authorUrl": "https://github.com/cloudrac3r/",
         "description": "When enabled, categories will be <s>aligned in the direction you choose</s> centered and <s>may have</s> has lines next to them <s>if you choose so</s>.",
-        "settings": [
-            {
+        "settings": [{
                 "name": "Alignment",
                 "description": "Towards where should the category name be aligned.",
-                "options": [
-                    "Left",
-                    "Center",
-                    "Right"
-                ]
+                "options": ["Left", "Center", "Right"]
             },
             {
                 "name": "Line Style",
                 "description": "Should there be lines and if yes what style should they be.",
-                "options": [
-                    "None",
-                    "Dotted",
-                    "Dashed",
-                    "Solid"
-                ]
+                "options": ["None", "Dotted", "Dashed", "Solid"]
             }
         ]
     },

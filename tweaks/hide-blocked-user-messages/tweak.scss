@@ -1,6 +1,7 @@
-/*
- Credits: emma <https://gitlab.com/GhostlyDilemma>
- */
-.messageGroupBlocked-3wrQQX, .messageGroupBlocked-3wrQQX + .divider-3gKybi {
+[class|=groupStart] [class|=blockedSystemMessage] {
+  display: none;
+}
+
+[class|=groupStart]:not([class|=message]) {
   display: none;
 }
