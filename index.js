@@ -20,16 +20,27 @@ module.exports = class DiscordTweaks extends Plugin {
 
     const getSettings = (key, defaultValue) => this.settings.get(key, defaultValue);
 
-    this.loadCSS(resolve(__dirname, 'style.scss'))
+    this.loadStylesheet(resolve(__dirname, 'style.scss'))
 
-    this.registerSettings('discord-tweaks', 'Discord Tweaks', (props) =>
+    // this.registerSettings('discord-tweaks', 'Discord Tweaks', (props) =>
+    //   React.createElement(Settings, {
+    //     toggleTweak,
+    //     toggleTweakJS,
+    //     tweaks,
+    //     ...props
+    //   })
+    // );
+    powercord.api.settings.registerSettings('discord-tweaks', {
+      category: 'discord-tweaks',
+      label: 'Discord Tweaks',
+      render: (props) =>
       React.createElement(Settings, {
         toggleTweak,
         toggleTweakJS,
         tweaks,
         ...props
       })
-    );
+    });
 
     tweaks.forEach(tweak => {
       let tweakName = tweak.name.toLowerCase().replace(/ /g, '-');
@@ -46,7 +57,7 @@ module.exports = class DiscordTweaks extends Plugin {
     if (fs.existsSync(resolve(`${__dirname}/tweaks/${tweakId}`, `tweak.scss`))) {
       const style = document.getElementById(`powercord-css-${id}`);
       if (!style) {
-        this.loadCSS(id, resolve(`${__dirname}/tweaks/${tweakId}`, `tweak.scss`));
+        this.loadStylesheet(resolve(`${__dirname}/tweaks/${tweakId}/tweak.scss`));
       } else {
         this.unloadCSS(id);
       }
@@ -66,7 +77,7 @@ module.exports = class DiscordTweaks extends Plugin {
     }
   }
 
-  unloadCSS(id) {
+  unloadStylesheet(id) {
     const { styles } = this.registered;
 
     for (let i = 0; i < styles.length; i++) {
@@ -76,5 +87,9 @@ module.exports = class DiscordTweaks extends Plugin {
     }
 
     powercord.styleManager.themes.get(id).remove();
+  }
+  
+  pluginWillUnload () {
+    powercord.api.settings.unregisterSettings('discord-tweaks')
   }
 };
