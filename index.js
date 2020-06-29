@@ -22,14 +22,6 @@ module.exports = class DiscordTweaks extends Plugin {
 
     this.loadStylesheet(resolve(__dirname, 'style.scss'))
 
-    // this.registerSettings('discord-tweaks', 'Discord Tweaks', (props) =>
-    //   React.createElement(Settings, {
-    //     toggleTweak,
-    //     toggleTweakJS,
-    //     tweaks,
-    //     ...props
-    //   })
-    // );
     powercord.api.settings.registerSettings('discord-tweaks', {
       category: 'discord-tweaks',
       label: 'Discord Tweaks',
