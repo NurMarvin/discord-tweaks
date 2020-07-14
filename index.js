@@ -83,5 +83,13 @@ module.exports = class DiscordTweaks extends Plugin {
   
   pluginWillUnload () {
     powercord.api.settings.unregisterSettings('discord-tweaks')
+
+    tweaks.forEach(tweak => {
+      let tweakName = tweak.name.toLowerCase().replace(/ /g, '-');
+
+      if (this.settings.get(tweakName)) {
+        this.toggleTweak(tweakName);
+      }
+    });
   }
 };

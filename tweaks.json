@@ -89,7 +89,7 @@
     {
         "name": "Hide Disabled Emojis",
         "author": "Juby210",
-        "authorUrl": "https://github.com/juby210-PL/",
+        "authorUrl": "https://github.com/Juby210",
         "description": "When enabled, disabled emojis are hidden in the emoji picker <s>(imagine not having nitro)</s>."
     },
     {
@@ -97,5 +97,11 @@
         "author": "NurMarvin",
         "authorUrl": "https://github.com/NurMarvin/",
         "description": "When enabled, guild tooltips have their old styling again."
+    },
+    {
+        "name": "Bring Back Image URLs",
+        "author": "Juby210",
+        "authorUrl": "https://github.com/Juby210",
+        "description": "Improves user security by showing image urls if they aren't an attachment."
     }
 ]
