@@ -5,7 +5,7 @@ module.exports = {
   enable: async () => {
     const module = await getModule(['decodeURIComponent']);
 
-    inject('discord-tweaks-buildoverride-fix', module, 'decodeURIComponent', (_, _) => {
+    inject('discord-tweaks-buildoverride-fix', module, 'decodeURIComponent', _ => {
       return [];
     }, true);
   },
