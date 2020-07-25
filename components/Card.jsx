@@ -110,7 +110,7 @@ module.exports = class Card extends React.Component {
               toggleSetting(tweakName, false);
             }}
           >
-            {!enabled ? 'Enabled' : 'Disable'}
+            {!enabled ? 'Enable' : 'Disable'}
           </SwitchItem>
         </div>
       </div>
