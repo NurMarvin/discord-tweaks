@@ -105,11 +105,5 @@
     "author": "Juby210",
     "authorUrl": "https://github.com/Juby210",
     "description": "Improves user security by showing image urls if they aren't an attachment."
-  },
-  {
-    "name": "Fix Build Override Crashes",
-    "author": "NurMarvin",
-    "authorUrl": "https://github.com/NurMarvin",
-    "description": "Prevents build override embeds from loading to prevent stinky people from crashing your Discord client"
   }
 ]
