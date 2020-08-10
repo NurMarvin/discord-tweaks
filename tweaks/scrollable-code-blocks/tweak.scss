@@ -1,7 +1,10 @@
 /*
- Idea taken from frozolotl's Discord One Dark theme <https://gitlab.com/frozo/discord-onedark/>
+ * Copyright (c) 2020 NurMarvin (Marvin Witt)
+ * Idea taken from frozolotl's Discord One Dark theme <https://gitlab.com/frozo/discord-onedark/>
+ * Licensed under the Open Software License version 3.0
  */
-.theme-dark [class|=markup] {
+ 
+.theme-dark [class|='markup'] {
   pre {
     height: 100%;
     overflow-y: scroll;

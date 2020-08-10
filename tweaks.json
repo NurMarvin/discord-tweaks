@@ -7,7 +7,7 @@
   {
     "name": "Better Channel Categories",
     "author": "Cadence",
-    "authorUrl": "https://github.com/cloudrac3r/",
+    "authorUrl": "https://github.com/cloudrac3r",
     "description": "When enabled, categories will be <s>aligned in the direction you choose</s> centered and <s>may have</s> has lines next to them <s>if you choose so</s>.",
     "settings": [
       {
@@ -31,61 +31,61 @@
   {
     "name": "Rainbow Mentions",
     "author": "Cadence",
-    "authorUrl": "https://github.com/cloudrac3r/",
+    "authorUrl": "https://github.com/cloudrac3r",
     "description": "When enabled, mentions have a rainbow gradient in the background."
   },
   {
     "name": "Always Show Message Timestamps",
     "author": "Cadence",
-    "authorUrl": "https://github.com/cloudrac3r/",
+    "authorUrl": "https://github.com/cloudrac3r",
     "description": "When enabled, message timestamps are always shown in compact mode."
   },
   {
     "name": "Hide Library Button",
     "author": "Cadence",
-    "authorUrl": "https://github.com/cloudrac3r/",
+    "authorUrl": "https://github.com/cloudrac3r",
     "description": "When toggled, the library button under the home tab will not be shown.<br>(Really helps to not always be reminded that Discord's game store only supports Windows)"
   },
   {
     "name": "Scrollable Code Blocks",
     "author": "NurMarvin",
-    "authorUrl": "https://github.com/NurMarvin/",
+    "authorUrl": "https://github.com/NurMarvin",
     "description": "When enabled, code blocks are scrollable."
   },
   {
     "name": "Hide Server Badges Unless Hovered",
     "author": "Cadence",
-    "authorUrl": "https://github.com/cloudrac3r/",
+    "authorUrl": "https://github.com/cloudrac3r",
     "description": "When enabled, the server's badge will not be shown unless you hover over the guild name."
   },
   {
     "name": "Show Full Role Names",
     "author": "Cadence",
-    "authorUrl": "https://github.com/cloudrac3r/",
+    "authorUrl": "https://github.com/cloudrac3r",
     "description": "When enabled, role names in the user list on the right are fully shown by wrapping to the next line."
   },
   {
     "name": "More Obvious Guild Speaker",
     "author": "Cadence",
-    "authorUrl": "https://github.com/cloudrac3r/",
+    "authorUrl": "https://github.com/cloudrac3r",
     "description": "When enabled, the voice indicator icon on guilds is a little better to see."
   },
   {
     "name": "Larger Profile Avatars",
     "author": "Cadence",
-    "authorUrl": "https://github.com/cloudrac3r/",
+    "authorUrl": "https://github.com/cloudrac3r",
     "description": "When enabled, user avatars in the user popouts become a little bit bigger."
   },
   {
     "name": "Hide Gift Button",
     "author": "Soheab",
-    "authorUrl": "https://github.com/Soheab/",
+    "authorUrl": "https://github.com/Soheab",
     "description": "When enabled, the gift button on the text field next to GIF will not be shown <s>(because honestly, who wants to give away free stuff to others)</s>."
   },
   {
     "name": "Compact Extra Buttons",
     "author": "Cadence",
-    "authorUrl": "https://github.com/cloudrac3r/",
+    "authorUrl": "https://github.com/cloudrac3r",
     "description": "When enabled, message buttons that are added by other plugins like Star, Quick React or Quote will be shown in a compact list when hovered over."
   },
   {
@@ -97,7 +97,7 @@
   {
     "name": "Make Guild Tooltips Great Again",
     "author": "NurMarvin",
-    "authorUrl": "https://github.com/NurMarvin/",
+    "authorUrl": "https://github.com/NurMarvin",
     "description": "When enabled, guild tooltips have their old styling again."
   },
   {
