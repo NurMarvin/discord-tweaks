@@ -11,7 +11,7 @@ module.exports = {
         const mod = await getModule(['renderMessageMarkupToAST']);
 
         inject('discord-tweaks-imageurls', mod, 'default', args => {
-            args[1] = false;
+            if (args[1]) args[1].renderMediaEmbeds = false;
             return args;
         }, true);
     },
