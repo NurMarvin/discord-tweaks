@@ -1,6 +1,9 @@
 # Discord Tweaks
 A Powercord plugin that gives you small tweaks for your Discord client
 
+## Support Server (NEW)
+Need help with the plugin? Feel free to drop into the [support server](https://nurmarv.in/support) and ask for help!
+
 ## Tweaks
 - Always show message timestamps in compact mode
 - Hide blocked user messages
