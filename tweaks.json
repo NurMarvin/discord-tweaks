@@ -8,7 +8,7 @@
     "name": "Better Channel Categories",
     "author": "Cadence",
     "authorUrl": "https://github.com/cloudrac3r",
-    "description": "When enabled, categories will be <s>aligned in the direction you choose</s> centered and <s>may have</s> has lines next to them <s>if you choose so</s>.",
+    "description": "When enabled, categories will be <s>aligned in the direction you choose</s> centered and <s>may</s> have lines next to them <s>if you choose so</s>.",
     "settings": [
       {
         "name": "Alignment",
